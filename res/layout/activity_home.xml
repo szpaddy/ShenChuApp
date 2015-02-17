@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/fl_content_main"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="53.0dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_xian"
+            android:background="#ffdddddd" />
+
+        <RadioGroup
+            android:id="@+id/rg_main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rbtn_home"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@color/bg_all"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/rbtn_main_home"
+                android:gravity="center"
+                android:paddingTop="4.0dip"
+                android:text="首页"
+                android:textColor="@drawable/rbtn_main_txt"
+                android:textSize="@dimen/txt_lable" />
+
+            <RadioButton
+                android:id="@+id/rbtn_job"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@color/bg_all"
+                android:button="@null"
+                android:drawableTop="@drawable/rbtn_main_job"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:text="求职招聘"
+                android:textColor="@drawable/rbtn_main_txt"
+                android:textSize="@dimen/txt_lable" />
+
+            <RadioButton
+                android:id="@+id/rbtn_purchase"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@color/bg_all"
+                android:button="@null"
+                android:drawableTop="@drawable/rbtn_main_purchase"
+                android:gravity="center"
+                android:paddingTop="4.0dip"
+                android:text="原料设备"
+                android:textColor="@drawable/rbtn_main_txt"
+                android:textSize="@dimen/txt_lable" />
+
+            <RadioButton
+                android:id="@+id/rbtn_transfer"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@color/bg_all"
+                android:button="@null"
+                android:drawableTop="@drawable/rbtn_main_transfer"
+                android:gravity="center"
+                android:paddingTop="4.0dip"
+                android:text="店铺转让"
+                android:textColor="@drawable/rbtn_main_txt"
+                android:textSize="@dimen/txt_lable" />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>
