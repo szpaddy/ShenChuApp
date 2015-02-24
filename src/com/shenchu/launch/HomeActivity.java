@@ -40,6 +40,7 @@ public class HomeActivity extends BaseActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		ViewUtils.inject(this);
+		showFragByTag(fragMap.get(Integer.valueOf(R.id.rbtn_home)));
 	}
 
 	@OnRadioGroupCheckedChange(R.id.rg_main)
